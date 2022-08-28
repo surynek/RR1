@@ -1,0 +1,22 @@
+RR1: Real Robot One - a DIY 3D-Pribtable Dektop Robotic Arm
+
+(C) Pavel Surynek, 2021 - 2022
+
+===========================================================
+
+RR1 is a desktop robotic arm based on 3D-printing using
+stepper motors and custom built planetary gear reducers.
+The robot is controled by the Arduino Due board.
+
+
+This repository will contain files concerning the robot
+such as STL files for 3D-printable parts, Arduino
+sketches, and other related source codes.
+
+
+
+Please enjoy building of your own robot!
+
+-----------------------------------------------------------
+
+Pavel Surynek, August 2022
