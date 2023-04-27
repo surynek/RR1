@@ -1,6 +1,6 @@
 RR1: Real Robot One - a DIY 3D-Pribtable Dektop Robotic Arm
 
-(C) Pavel Surynek, 2021 - 2022
+(C) Pavel Surynek, 2021 - 2023
 
 ===========================================================
 
@@ -20,3 +20,25 @@ Please enjoy building of your own robot!
 -----------------------------------------------------------
 
 Pavel Surynek, August 2022
+
+
+===========================================================
+
+Update April 2023: Added .stl files of base turret, shoulder
+and elbow joints, and the upper arm rigid links - all
+substantilly revised.
+
+The planetary gearboxes for the shoulder and elbow joint were
+reinforced with additional bearings that hold the central
+cage to which planet gears and the sun are attached.
+In contrast to RR1 rev.1 (the black one prototype) encoders
+are moved from motor shafts directly to joints. The torque
+is transmitted from joints to encoders via belts for which
+parts are ready in the repository.
+
+Please enjoy building of your own robot!
+
+-----------------------------------------------------------
+
+Pavel Surynek, April 2023
+
