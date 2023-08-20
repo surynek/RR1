@@ -9,10 +9,9 @@ stepper motors and custom built planetary gear reducers.
 The robot is controled by the Arduino Due board.
 
 
-This repository will contain files concerning the robot
-such as STL files for 3D-printable parts, Arduino
+This repository contains files needed for building the
+robot such as STL files for 3D-printable parts, Arduino
 sketches, and other related source codes.
-
 
 
 Please enjoy building of your own robot!
@@ -20,6 +19,18 @@ Please enjoy building of your own robot!
 -----------------------------------------------------------
 
 Pavel Surynek, August 2022
+
+
+***********************************************************
+Update log
+===========================================================
+
+Update August 2023: Added .stl files for encoder holders
+for the base and the shoulder joints.
+
+-----------------------------------------------------------
+
+Pavel Surynek, August 2023
 
 
 ===========================================================
