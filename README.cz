@@ -1,79 +1,78 @@
-RR1: Skutecnı robot jednicka - DIY 3D-tiskutelná stolní robotická pae
+ï»¿RR1: SkuteÄnÃ½ robot jedniÄka - DIY 3D-tiskutelnÃ¡ stolnÃ­ robotickÃ¡ paÅ¾e
 
 (C) Pavel Surynek, 2021 - 2023
 
 ======================================================================
 
 
-Robotická pae RR1: Real Robot One je stolní robotická pae se 6-ti
-osami. Robot je zaloen 3D tištenıch dílech, pouívá krokové motory
-Nema 23 a Nema 17 a vlastní planetové prevodovky. Rízení mue bıt
-pomocí Arduina (postavené exempláre pouívají Adruino Due), ale lze
-pouít i jinı jednodeskovı deskovı pocítac.
+RobotickÃ¡ paÅ¾e RR1: Real Robot One je stolnÃ­ robotickÃ¡ paÅ¾e se 6-ti
+osami. Robot je zaloÅ¾en 3D tiÅ¡tÄ›nÃ½ch dÃ­lech, pouÅ¾Ã­vÃ¡ krokovÃ© motory
+Nema 23 a Nema 17 a vlastnÃ­ planetovÃ© pÅ™evodovky. Å˜Ã­zenÃ­ mÅ¯Å¾e bÃ½t
+pomocÃ­ Arduina (postavenÃ© exemplÃ¡Å™e pouÅ¾Ã­vajÃ­ Adruino Due), ale lze
+pouÅ¾Ã­t i jinÃ½ jednodeskovÃ½ deskovÃ½ poÄÃ­taÄ.
 
-Robot RR1 pouívá tzv. uzavrenou smycku, tj. rídící jednotka díky
-enkodérum napojenım prímo na klouby robota v kadém okamiku ví, v
-jaké konfiguraci se robot nachází (tedy jaké má nastavení kloubu).
-Konecne se mi podarilo shromádit všechny díly pro RR1 revize 2
-(rev.2 - oranovı robot) zde pohromade ve formátu .stl v jednom
-repozitári.
+Robot RR1 pouÅ¾Ã­vÃ¡ tzv. uzavÅ™enou smyÄku, tj. Å™Ã­dÃ­cÃ­ jednotka dÃ­ky
+enkodÃ©rÅ¯m napojenÃ½m pÅ™Ã­mo na klouby robota v kaÅ¾dÃ©m okamÅ¾iku vÃ­, v jakÃ©
+konfiguraci se robot nachÃ¡zÃ­ (tedy jakÃ© mÃ¡ nastavenÃ­ kloubÅ¯).
 
-Zatím jsem nezverejnil zdrojáky v CADu, ty pošlu prípadne na vyádání
-pro konkrétní díl (nekdy je treba díly vyladit o pár desetin milimetru
-pro konkrétní 3D tiskárnu). Prece jen mi dal návrh dost práce, take
-nechci zdrojáky dávat úplne volne k dispozici.
+KoneÄnÄ› se mi podaÅ™ilo shromÃ¡Å¾dit vÅ¡echny dÃ­ly pro RR1 revize 2
+(rev.2 - oranÅ¾ovÃ½ robot) zde pohromadÄ› ve formÃ¡tu .stl v jednom
+repozitÃ¡Å™i. ZatÃ­m jsem nezveÅ™ejnil zdrojÃ¡ky v CADu, ty poÅ¡lu pÅ™Ã­padnÄ›
+na vyÅ¾Ã¡dÃ¡nÃ­ pro konkrÃ©tnÃ­ dÃ­l (nÄ›kdy je tÅ™eba dÃ­ly vyladit o pÃ¡r desetin
+milimetru pro konkrÃ©tnÃ­ 3D tiskÃ¡rnu). PÅ™ece jen mi dal nÃ¡vrh dost prÃ¡ce,
+takÅ¾e nechci zdrojÃ¡ky dÃ¡vat ÃºplnÄ› volnÄ› k dispozici.
 
-Zkušenosti z konstrukce jsou takové, e revize 1 robota RR1 (rev. 1 -
-cernı robot), která byla vytištena kompletne z PETG, nebyla ideální.
-Ukázalo se ale, e celkove není robot dost rigidní, zejména se
-ukazovala urcitá prunost v prevodovkách, ackoli se nezdálo, e by to
-byl nejak vıraznı vakl, kterı je pro planetové prevodovky typickı.
-V prevodovkách u RR1 je vakl velmi zmírnen tím, e pouíváme šípová
-ozubená kolecka.
+ZkuÅ¡enosti z konstrukce jsou takovÃ©, Å¾e revize 1 robota RR1 (rev. 1 -
+ÄernÃ½ robot), kterÃ¡ byla vytiÅ¡tÄ›na kompletnÄ› z PETG, nebyla ideÃ¡lnÃ­.
+UkÃ¡zalo se ale, Å¾e celkovÄ› nenÃ­ robot dost rigidnÃ­, zejmÃ©na se ukazovala
+urÄitÃ¡ pruÅ¾nost v pÅ™evodovkÃ¡ch, aÄkoli se nezdÃ¡lo, Å¾e by to byl nÄ›jak
+vÃ½raznÃ½ vakl, kterÃ½ je pro planetovÃ© pÅ™evodovky typickÃ½. V pÅ™evodovkÃ¡ch
+u RR1 je vakl velmi zmÃ­rnÄ›n tÃ­m, Å¾e pouÅ¾Ã­vÃ¡me Å¡Ã­povÃ¡ ozubenÃ¡ koleÄka.
 
-Doporucuji tedy tisknout mechanické cásti, jako jsou ozubená kolecka z
-pevnejšího materiálu, jako je napríklad polykarbonát s uhlíkovım vláknem.
-Takto je vytištena revize 2 (rev. 2  - oranovı robot) a celková
-rigidita je mnohem lepší. V prevodovkách vakl prakticky není. Navíc celá
-konstrukce pocítá s enkodéry primo na kloubech, take se i prípadná
-nerigidita dá kompenzovat softwarove, protoe z enkodéru máme velmi
-presnou informaci o konfiguraci kloubu.
+DoporuÄuji tedy tisknout mechanickÃ© ÄÃ¡sti, jako jsou ozubenÃ¡ koleÄka z
+pevnÄ›jÅ¡Ã­ho materiÃ¡lu, jako je napÅ™Ã­klad polykarbonÃ¡t s uhlÃ­kovÃ½m
+vlÃ¡knem. Takto je vytiÅ¡tÄ›na revize 2 (rev. 2  - oranÅ¾ovÃ½ robot) a
+celkovÃ¡ rigidita je mnohem lepÅ¡Ã­. V pÅ™evodovkÃ¡ch vakl prakticky nenÃ­.
+NavÃ­c celÃ¡ konstrukce poÄÃ­tÃ¡ s enkodÃ©ry pÅ™imo na kloubech, takÅ¾e se i
+pÅ™Ã­padnÃ¡ nerigidita dÃ¡ kompenzovat softwarovÄ›, protoÅ¾e z enkodÃ©ru mÃ¡me
+velmi pÅ™esnou informaci o konfiguraci kloubu.
 
-U kleští je tomu presne naopak, tam chceme urcitou prunost. Pro
-správnou funkci kleští je potreba vytisknout táhla z flexibilního
-materiálu, jako je TPU 98A. Rovne je potreba z tohoto flexibilního
-materiálu tisknout vnitrní zubatı povrch kleští.
+U kleÅ¡tÃ­ je tomu pÅ™esnÄ› naopak, tam chceme urÄitou pruÅ¾nost. Pro sprÃ¡vnou 
+funkci kleÅ¡tÃ­ je potÅ™eba vytisknout tÃ¡hla z flexibilnÃ­ho materiÃ¡lu,
+jako je TPU 98A. RovnÄ›Å¾ je potÅ™eba z tohoto flexibilnÃ­ho materiÃ¡lu
+tisknout vnitÅ™nÃ­ zubatÃ½ povrch kleÅ¡tÃ­.
 
-Krome tištenıch dílu je potreba mnoho šroubu ruznıch délek a matek.
-Tištené díly lze dát dohromady pomoci metrickıch šroubu prumeru 3mm
-(naprostá vetšina) a nekolika šroubu o prumerech 4mm a 5mm. Doporucuji
-pouít šrouby Philips s nízkou hlavickou (vetšina der v 3D-tištenıch
-dílech je dimenzována tak, aby hlavicka šroubu byla zarovnána s povrchem
-dílu). Dále jsou potreba ctvercové matky pro šrouby prumeru 3mm (díry
-na tyto matky jsou ji vytvorené v 3D tištenıch dílech). Nekolik
-ctvercovıch matek pro šrouby o prumeru 5mm.
+KromÄ› tiÅ¡tÄ›nÃ½ch dÃ­lÅ¯ je potÅ™eba mnoho Å¡roubÅ¯ rÅ¯znÃ½ch dÃ©lek a matek.
+TiÅ¡tÄ›nÃ© dÃ­ly lze dÃ¡t dohromady pomoci metrickÃ½ch Å¡roubÅ¯ prÅ¯mÄ›ru 3mm
+(naprostÃ¡ vÄ›tÅ¡ina) a nÄ›kolika Å¡roubÅ¯ o prÅ¯mÄ›rech 4mm a 5mm. DoporuÄuji
+pouÅ¾Ã­t Å¡rouby Philips s nÃ­zkou hlaviÄkou (vÄ›tÅ¡ina dÄ›r v 3D-tiÅ¡tÄ›nÃ½ch
+dÃ­lech je dimenzovÃ¡na tak, aby hlaviÄka Å¡roubu byla zarovnÃ¡na s povrchem
+dÃ­lu). DÃ¡le jsou potÅ™eba ÄtvercovÃ© matky pro Å¡rouby prÅ¯mÄ›ru 3mm (dÃ­ry na
+tyto matky jsou jiÅ¾ vytvoÅ™enÃ© v 3D tiÅ¡tÄ›nÃ½ch dÃ­lech). NÄ›kolik ÄtvercovÃ½ch
+matek pro Å¡rouby o prÅ¯mÄ›ru 5mm.
 
-Spojnice na pai vyuívají hliníkové profily velikosti 20mm x 20mm (paní
-spojnice) a 30mm x 30mm a 15mm x 15mm (loketní spojnice), jejich délkou
-lze ovlivnit celkovou velikost robota, ale nedoporucuji delat robota
-moc velkého, nebot kadé prodlouení pae zvetšuje páky a tocivé momenty.
+Spojnice na paÅ¾i vyuÅ¾Ã­vajÃ­ hlinÃ­kovÃ© profily velikosti 20mm x 20mm (paÅ¾nÃ­
+spojnice) a 30mm x 30mm a 15mm x 15mm (loketnÃ­ spojnice), jejich dÃ©lkou
+lze ovlivnit celkovou velikost robota, ale nedoporuÄuji dÄ›lat robota moc
+velkÃ©ho, neboÅ¥ kaÅ¾dÃ© prodlouÅ¾enÃ­ paÅ¾e zvÄ›tÅ¡uje pÃ¡ky a toÄivÃ© momenty.
 
-Celkem je potreba 7 krokovıch motoru, 4 motory Nema 23 ruznıch velikostí
-– 112mm pro ramenní kloub, 76mm pro základnu, 54mm a 80mm pro loketní
-klouby, dále motory Nemá 17, z toho jeden velkı 59mm na otácení zápestního
-kloubu a dva menší 39mm na rotaci zápestí a otevírání a zavírání kleští.
-Klešte jsou rozpohybovány pomocí závitové tyce, take je dobré pouít
-motor se závitovou tycí místo hrídele. Enkodéry jsou montovány prímo k
-jednotlivım kloubum, dráky z 3D tisku jsou pripravené na enkodéry
-AMT 103V a jeden AMT 102V pro klešte.
+Celkem je potÅ™eba 7 krokovÃ½ch motorÅ¯, ÄtyÅ™i motory Nema 23 rÅ¯znÃ½ch
+velikostÃ­ â€“ 112mm pro ramennÃ­ kloub, 76mm pro zÃ¡kladnu, 54mm a 80mm pro
+loketnÃ­ klouby, dÃ¡le motory NemÃ¡ 17, z toho jeden velkÃ½ 59mm na otÃ¡ÄenÃ­
+zÃ¡pÄ›stnÃ­ho kloubu a dva menÅ¡Ã­ 39mm na rotaci zÃ¡pÄ›stÃ­ a otevÃ­rÃ¡nÃ­ a zavÃ­rÃ¡nÃ­
+kleÅ¡tÃ­. KleÅ¡tÄ› jsou rozpohybovÃ¡ny pomocÃ­ zÃ¡vitovÃ© tyÄe, takÅ¾e je dobrÃ©
+pouÅ¾Ã­t motor se zÃ¡vitovou tyÄÃ­ mÃ­sto hÅ™Ã­dele. EnkodÃ©ry jsou montovÃ¡ny
+pÅ™Ã­mo k jednotlivÃ½m kloubÅ¯m, drÅ¾Ã¡ky z 3D tisku jsou pÅ™ipravenÃ© na enkodÃ©ry
+AMT 103V a jeden AMT 102V pro kleÅ¡tÄ›.
 
-Toto je jen krátkı úvodník k robotické pai RR1. Chtel bych vytvorit
-podrobnı návod na stavbu, ale nejspíš to udelám a pro další revize robota,
-protoe porád robota ješte vylepšuju a delám zmeny. Tím chci ríct, e
-revize 3 u se vyvíjí (muete zkusit uhádnout, jakou bude mít barvu).
+Toto je jen krÃ¡tkÃ½ ÃºvodnÃ­k k robotickÃ© paÅ¾i RR1. ChtÄ›l bych vytvoÅ™it
+podrobnÃ½ nÃ¡vod na stavbu, ale nejspÃ­Å¡ to udÄ›lÃ¡m aÅ¾ pro dalÅ¡Ã­ revize robota,
+protoÅ¾e poÅ™Ã¡d robota jeÅ¡tÄ› vylepÅ¡uju a dÄ›lÃ¡m zmÄ›ny. TÃ­m chci Å™Ã­ct, Å¾e
+revize 3 uÅ¾ se vyvÃ­jÃ­ (mÅ¯Å¾ete zkusit uhÃ¡dnout, jakou bude mÃ­t barvu).
+
 
 ----------------------------------------------------------------------
 
-Konstrukci robotu zdar!
+Konstrukci robotÅ¯ zdar!
 
-Pavel Surnek, Srpen 2023
+Pavel Surynek, srpen 2023
