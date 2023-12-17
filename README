@@ -42,7 +42,7 @@ about the configuration of the joint from the encoder.
 With the gripper, it is exactly the opposite, where we want a certain
 flexibility. For for the correct function of the gripper, it is necessary
 to print the rods from the flexible material such as TPU 98A. There is
-also a need from this flexible material to print the inner toothed
+also a need from this flexible material to print the inner serrated
 surface of the gripper.
 
 In addition to the printed part, many screws of different lengths and
