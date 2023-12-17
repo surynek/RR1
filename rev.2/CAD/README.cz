@@ -1,0 +1,63 @@
+﻿RR1: Skutečný robot jednička - DIY 3D-tiskutelná stolní robotická paže
+
+(C) Pavel Surynek, 2021 - 2023
+
+======================================================================
+
+
+Robotická paže RR1: Real Robot One je stolní robotická paže se 6-ti
+osami. Robot je založen 3D tištěných dílech, používá krokové motory
+Nema 23 a Nema 17 a vlastní planetové převodovky. Řízení může být
+pomocí Arduina (postavené exempláře používají Adruino Due), ale lze
+použít i jiný jednodeskový deskový počítač.
+
+Rozhodl jsem se zveřejnit kompletní zdrojové soubory s CAD výkresy
+k RR1 revizi 2. Dávám zdrojové CAD soubory k dispozici zcela zdrama
+volně pro komunitu tvůrců podle přiložené licence GPL. Ačkoli jsem
+vytvářením strávil spoustu času, myslím si, že jako akademik bych měl
+poskytovat výsledky své práce veřejnosti.
+
+Současný stav zdrojových souborů je poněkud nepořádný a zdaleka ne
+všechno je hezky pojmenováno. Myslím si, ale že trochu šikovný tvůrce
+se v nákresech vyzná a svého robota vytvořit dokáže. Je třeba, říci, že
+robota RR1 stále vyvíjím, v době psaní tohoto textu pracuji na revizi 3
+(opakuji, že zveřejněná verze zdrojáků je k revizi 2). Takže dokonalejší
+dokumentace, pojmenování a organizace souborů přijde v revizi 3 a
+pozdějších.
+
+K návrhu 3D tištěných dílů byl použit FreeCAD v duchu mé filozofie
+maximálně používat volně šiřitelný otevřený software, který dává
+garanci dlouhého svobodného trvání bez ošklivých marketingových triků.
+K výtisku doporučuji tiskárny Prusa MK3S+ nebo Prusa MK4. Jako materiály
+doporučuji na mechanické díly (ozubená kolečka) použít Prusament PC
+Blend s uhlíkovým vláknem, na podpůrné díly stačí PETG nebo PLA. Pomocí
+těchto tiskáren a materiálů byl vytištěn můj exemplář RR1 rev. 2
+(https://surynek.net/_main/index.php?select=research#RR1rev2).
+
+U mechanických dílů je někdy vzhledem k nepřesnostem tisku a různým
+vlastnostem materiálů poladit velikosti dílů přibližně o 0.1mm, aby
+vše do sebe hladce pasovalo. Je tedy zcela v pořádku, že konkrétní díl
+typicky mechanické ozubené kolečko se má přesné rozměry až v několikátém
+výtisku (čím více tiskáren máte, tím lépe :-). Pochopitelně nejvíce je
+nepřesnosti potřeba ladit u planetových převodovek.
+
+Samozřejmě 3D tištěné díly nejsou vše, jsou potřeba krokové motory,
+šrouby, ložiska, kabely, hliníkové extruze atd. Rozměry ložisek jsou
+vyznačené v nákresech, takže podle toho lze určit správné ložisko. U
+ložisek je filozofie taková, že jich maximum chci od lokálních českých
+firem. Dále je potřeba enormní množství šroubů různých velikostí, většina
+šroubů má průměř 3mm, několik šroubů je velikosti 5mm (montáž hliníkových
+extruzí) a několik šoubů 2.5mm a 2mm na montáž enkóderů a malých dílů.
+
+Uvítám jakékoli postřehy a komentáře, případně návrhy, co by bylo
+potřeba v dalších revizich robota zlepšit.
+
+Jakmile budou připravené další materiály a dokumenty, zveřejním je také.
+Zatím děkuji za přízeň!
+
+
+----------------------------------------------------------------------
+
+Konstrukci robotů zdar!
+
+Pavel Surynek, prosinec 2023

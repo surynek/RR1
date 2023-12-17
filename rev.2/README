@@ -1,0 +1,83 @@
+RR1: Real Robot Number One - DIY 3D-Printable Desktop Robotic Arm
+
+(C) Pavel Surynek, 2021 - 2023
+
+=======================================================================
+
+RR1:Real Robot One is a dektop 6-axis robotic arm. The robot is based
+on 3D printed parts, uses stepper motors Nema 23 and Nema 17 and custom
+planetary gearboxes. Robot can be controlled using Arduino (I used
+Adruino Due), but you can use another single-board computer.
+
+The RR1 robot uses a so-called closed-loop, i.e. the control unit thanks
+the encoder mounted directly to the joints of the robot knows at every
+moment, what configuration the robot is in (i.e. what are the angles of
+its joints).
+
+I finally managed to collect all the parts for RR1 revision 2 (rev.2 -
+the orange robot) here together in the  .stl format in one repository.
+
+I have not yet published the source files in CAD, I will send them on
+request for a specific part (sometimes parts need to be adjusted by a
+few tenths of a millimeter for a specific 3D printer). The design of 
+the RR1 robot represents lot of work for me, so I don't want to make the
+sources completely freely available (at least for now).
+
+Design experience is such that the revision 1 of the RR1 robot (rev. 1 -
+black robot), which was printed entirely from PETG, was not ideal. It
+turned out that overall the robot is not rigid enough, especially it
+showed some flexibility in the gearboxes, although it didn't seem like it
+there was some noticeable backlash, which is typical for planetary gears.
+In the gearboxes of the RR1, the backlash is greatly reduced by the use
+of Herringbone gears.
+
+So I recommend printing mechanical parts such as gears from a stronger
+material such as polycarbonate with carbon fiber. This is how revision 2
+is printed (rev. 2 - orange robot) and the overall rigidity is much better.
+There is practically no backlash in the gearboxes. In addition, the whole
+design includes encoders directly on the joints, so that any non-rigidity
+can be compensated by software, as we have very precise information
+about the configuration of the joint from the encoder.
+
+With the gripper, it is exactly the opposite, where we want a certain
+flexibility. For for the correct function of the gripper, it is necessary
+to print the rods from the flexible material such as TPU 98A. There is
+also a need from this flexible material to print the inner serrated
+surface of the gripper.
+
+In addition to the printed part, many screws of different lengths and
+nuts are needed. The printed parts can be put together using metric screws
+with a diameter of 3 mm (the vast majority) and several screws with
+diameters of 4mm and 5mm. I recommend use Philips screws with a low head
+(most holes in 3D-printed parts is dimensioned so that the screw head is
+aligned with the surface part). Furthermore, square nuts are needed for
+screws with a diameter of 3 mm (holes on these mothers are already created
+in 3D printed parts). Several square nuts for screws with a diameter
+of 5 mm.
+
+The links of the arm use aluminum profiles of size 20mm x 20mm (upper arm
+link) and 30mm x 30mm and 15mm x 15mm (elbow link), their length can adjust
+overall size of the robot, but I do not recommend making the robot too
+big, because every extension of the arm increases levers and torques.
+
+A total of 7 stepper motors are needed, four Nema 23 motors of different
+sizes – 112mm for the shoulder joint, 76mm for the base, 54mm and 80mm for
+the elbow joints, further motors It does not have 17, of which one is
+a large 59mm for rotating the wrist joint and two smaller 39mm for wrist
+rotation and opening and closing of the gripper. The gripper are moved
+using a threaded rod, so it's good to use a motor with a threaded rod
+instead of a motor with standard shaft. The encoders are mounted directly
+to each single joint, 3D printed holders are ready for encoders AMT 103V
+and one AMT 102V for gripper.
+
+This is just a short introduction to the RR1 robotic arm. I would like to
+create detailed construction instructions, but I will probably leave it
+until the next revisions of the robot, because I am still improving the
+robot and making changes. I mean that revision 3 is already in development
+(you can try to guess what color it will be).
+
+-------------------------------------------------- --------------------
+
+Happy and successful robot construction!
+
+Pavel Surnek, August 2023

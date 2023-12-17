@@ -1,0 +1,65 @@
+RR1: Real Robot Number One - DIY 3D-Printable Desktop Robotic Arm
+
+(C) Pavel Surynek, 2021 - 2023
+
+=======================================================================
+
+RR1:Real Robot One is a dektop 6-axis robotic arm. The robot is based
+on 3D printed parts, uses stepper motors Nema 23 and Nema 17 and custom
+planetary gearboxes. Robot can be controlled using Arduino (I used
+Adruino Due), but you can use another single-board computer.
+
+I decided to post the complete source files with CAD drawings for
+RR1 revision 2. I make the source CAD files available completely free of
+charge freely available to the maker community under the attached GPL
+license. Although I spent a lot of time creating the robot, I think as
+an academic I should to provide the results of my work to the public.
+
+The current state of the source files is somewhat messy and far from
+everything nicely named. However I think a bit of a clever maker can
+familiarize with the drawings and can build his/her own robot. It must
+be said that I am still developing the RR1 robot, at the time of writing
+I am working on the revision 3 (I repeat that the published version of
+the sources is for the revision 2). So more perfect documentation, naming
+and organization of files will come in revision 3 a later ones.
+
+FreeCAD has been used to design the 3D printed parts in the spirit of
+my philosophy of maximum use of open source software that gives a guarantee
+of long free duration without ugly marketing tricks.
+
+For printing, I recommend Prusa MK3S+ or Prusa MK4 printers. As of materials,
+I recommend using Prusament PC Blend with carbon fiber for mechanical
+parts (gears), PETG or PLA is good enough for the supporting parts. I
+printed my copy RR1 rev. 2 using these printers and materials (see more details
+on https://surynek.net/_main/index.php?select=research#RR1rev2).
+
+As of mechanical parts, it is sometimes due to printing inaccuracies and
+various properties of the materials to adjust the size of the parts by
+approximately 0.1mm in order make everything fit together smoothly. So it
+is perfectly fine that a particular part, typically a mechanical gear,
+has accurate dimensions only after several printouts (the more printers
+you have, the better :-). Of course, most inaccuracies need to be tuned
+for planetary gearboxes.
+
+Of course, 3D printed parts are not everything, stepper motors are needed,
+screws, bearings, cables, aluminum extrusions, etc. Bearing dimensions are
+marked in the drawings so that the correct bearing can be determined
+accordingly. The philosophy behind bearings is that I want as many of them
+as possible from local Czech manufacturers. In addition, an enormous number
+of screws of various sizes are needed, most of the screws have a diameter
+of 3 mm, several screws are 5 mm in size (installation of aluminum
+extrusion) and several 2.5mm and 2mm screws for mounting encoders and
+small parts.
+
+I welcome any observations and comments, or suggestions as what could improve
+the robot in the next revisions etc.
+
+As more files and documents are ready, I will post them as well.
+In the meantime, thanks for reading!
+
+
+-------------------------------------------------- --------------------
+
+Happy and successful robot construction!
+
+Pavel Surnek, December 2023

@@ -1,0 +1,78 @@
+﻿RR1: Skutečný robot jednička - DIY 3D-tiskutelná stolní robotická paže
+
+(C) Pavel Surynek, 2021 - 2023
+
+======================================================================
+
+
+Robotická paže RR1: Real Robot One je stolní robotická paže se 6-ti
+osami. Robot je založen 3D tištěných dílech, používá krokové motory
+Nema 23 a Nema 17 a vlastní planetové převodovky. Řízení může být
+pomocí Arduina (postavené exempláře používají Adruino Due), ale lze
+použít i jiný jednodeskový deskový počítač.
+
+Robot RR1 používá tzv. uzavřenou smyčku, tj. řídící jednotka díky
+enkodérům napojeným přímo na klouby robota v každém okamžiku ví, v jaké
+konfiguraci se robot nachází (tedy jaké má nastavení kloubů).
+
+Konečně se mi podařilo shromáždit všechny díly pro RR1 revize 2
+(rev.2 - oranžový robot) zde pohromadě ve formátu .stl v jednom
+repozitáři. Zatím jsem nezveřejnil zdrojáky v CADu, ty pošlu případně
+na vyžádání pro konkrétní díl (někdy je třeba díly vyladit o pár desetin
+milimetru pro konkrétní 3D tiskárnu). Přece jen mi dal návrh dost práce,
+takže nechci zdrojáky dávat úplně volně k dispozici.
+
+Zkušenosti z konstrukce jsou takové, že revize 1 robota RR1 (rev. 1 -
+černý robot), která byla vytištěna kompletně z PETG, nebyla ideální.
+Ukázalo se ale, že celkově není robot dost rigidní, zejména se ukazovala
+určitá pružnost v převodovkách, ačkoli se nezdálo, že by to byl nějak
+výrazný vakl, který je pro planetové převodovky typický. V převodovkách
+u RR1 je vakl velmi zmírněn tím, že používáme šípová ozubená kolečka.
+
+Doporučuji tedy tisknout mechanické části, jako jsou ozubená kolečka z
+pevnějšího materiálu, jako je například polykarbonát s uhlíkovým
+vláknem. Takto je vytištěna revize 2 (rev. 2  - oranžový robot) a
+celková rigidita je mnohem lepší. V převodovkách vakl prakticky není.
+Navíc celá konstrukce počítá s enkodéry přimo na kloubech, takže se i
+případná nerigidita dá kompenzovat softwarově, protože z enkodéru máme
+velmi přesnou informaci o konfiguraci kloubu.
+
+U kleští je tomu přesně naopak, tam chceme určitou pružnost. Pro správnou 
+funkci kleští je potřeba vytisknout táhla z flexibilního materiálu,
+jako je TPU 98A. Rovněž je potřeba z tohoto flexibilního materiálu
+tisknout vnitřní zubatý povrch kleští.
+
+Kromě tištěných dílů je potřeba mnoho šroubů různých délek a matek.
+Tištěné díly lze dát dohromady pomoci metrických šroubů průměru 3mm
+(naprostá většina) a několika šroubů o průměrech 4mm a 5mm. Doporučuji
+použít šrouby Philips s nízkou hlavičkou (většina děr v 3D-tištěných
+dílech je dimenzována tak, aby hlavička šroubu byla zarovnána s povrchem
+dílu). Dále jsou potřeba čtvercové matky pro šrouby průměru 3mm (díry na
+tyto matky jsou již vytvořené v 3D tištěných dílech). Několik čtvercových
+matek pro šrouby o průměru 5mm.
+
+Spojnice na paži využívají hliníkové profily velikosti 20mm x 20mm (pažní
+spojnice) a 30mm x 30mm a 15mm x 15mm (loketní spojnice), jejich délkou
+lze ovlivnit celkovou velikost robota, ale nedoporučuji dělat robota moc
+velkého, neboť každé prodloužení paže zvětšuje páky a točivé momenty.
+
+Celkem je potřeba 7 krokových motorů, čtyři motory Nema 23 různých
+velikostí – 112mm pro ramenní kloub, 76mm pro základnu, 54mm a 80mm pro
+loketní klouby, dále motory Nemá 17, z toho jeden velký 59mm na otáčení
+zápěstního kloubu a dva menší 39mm na rotaci zápěstí a otevírání a zavírání
+kleští. Kleště jsou rozpohybovány pomocí závitové tyče, takže je dobré
+použít motor se závitovou tyčí místo hřídele. Enkodéry jsou montovány
+přímo k jednotlivým kloubům, držáky z 3D tisku jsou připravené na enkodéry
+AMT 103V a jeden AMT 102V pro kleště.
+
+Toto je jen krátký úvodník k robotické paži RR1. Chtěl bych vytvořit
+podrobný návod na stavbu, ale nejspíš to udělám až pro další revize robota,
+protože pořád robota ještě vylepšuju a dělám změny. Tím chci říct, že
+revize 3 už se vyvíjí (můžete zkusit uhádnout, jakou bude mít barvu).
+
+
+----------------------------------------------------------------------
+
+Konstrukci robotů zdar!
+
+Pavel Surynek, srpen 2023
