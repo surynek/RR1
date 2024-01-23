@@ -1,13 +1,26 @@
 ﻿RR1: Skutečný robot jednička - DIY 3D-tiskutelná stolní robotická paže
 
-(C) Pavel Surynek, 2021 - 2023
+(C) Pavel Surynek, 2021 - 2024
 
 ======================================================================
 
+0. Obsah:
+--------------------------------
 
-Robotická paže RR1: Real Robot One je stolní robotická paže se 6-ti
-osami. Robot je založen 3D tištěných dílech, používá krokové motory
-Nema 23 a Nema 17 a vlastní planetové převodovky. Řízení může být
+1. RR1 se představuje
+2. Zdrojové soubory CAD pro rev.2
+3. Závěr
+
+
+======================================================================
+
+1. RR1 se představuje
+--------------------------------
+
+Robotická paže RR1: Skutečný robot jednička je stolní robotická paže
+se 6-ti osami. Robot je založen 3D tištěných dílech, používá krokové
+motory Nema 23 a Nema 17 a vlastní planetové převodovky s rozdělenými
+prstenci pro dosažení většího redukčního poměru. Řízení může být
 pomocí Arduina (postavené exempláře používají Adruino Due), ale lze
 použít i jiný jednodeskový deskový počítač.
 
@@ -15,12 +28,13 @@ Robot RR1 používá tzv. uzavřenou smyčku, tj. řídící jednotka díky
 enkodérům napojeným přímo na klouby robota v každém okamžiku ví, v jaké
 konfiguraci se robot nachází (tedy jaké má nastavení kloubů).
 
-Konečně se mi podařilo shromáždit všechny díly pro RR1 revize 2
-(rev.2 - oranžový robot) zde pohromadě ve formátu .stl v jednom
-repozitáři. Zatím jsem nezveřejnil zdrojáky v CADu, ty pošlu případně
-na vyžádání pro konkrétní díl (někdy je třeba díly vyladit o pár desetin
-milimetru pro konkrétní 3D tiskárnu). Přece jen mi dal návrh dost práce,
-takže nechci zdrojáky dávat úplně volně k dispozici.
+V tomto repozitáři se snažím zveřejnit materiály ke stavbě robota.
+Zveřejněné materiály se týkají druhého exempláře RR1, tzv. revize 2
+(rev. 2, oranžový robot). První exemplář, tedy revize 1 (rev. 1 -
+černý robot), sloužil k testům a ověření možnosti vůbec robotickou paži
+pomocí 3D tisku postavit. Protože materiály k rev. 1 nikdy nebyly
+moc dobře uspořádané, rozhodl jsem se zveřejnit až rev. 2 a to včetně
+zdrojových souborů CAD, tedy vše kompletně jako open source.
 
 Zkušenosti z konstrukce jsou takové, že revize 1 robota RR1 (rev. 1 -
 černý robot), která byla vytištěna kompletně z PETG, nebyla ideální.
@@ -42,14 +56,19 @@ funkci kleští je potřeba vytisknout táhla z flexibilního materiálu,
 jako je TPU 98A. Rovněž je potřeba z tohoto flexibilního materiálu
 tisknout vnitřní zubatý povrch kleští.
 
-Kromě tištěných dílů je potřeba mnoho šroubů různých délek a matek.
-Tištěné díly lze dát dohromady pomoci metrických šroubů průměru 3mm
-(naprostá většina) a několika šroubů o průměrech 4mm a 5mm. Doporučuji
-použít šrouby Philips s nízkou hlavičkou (většina děr v 3D-tištěných
-dílech je dimenzována tak, aby hlavička šroubu byla zarovnána s povrchem
-dílu). Dále jsou potřeba čtvercové matky pro šrouby průměru 3mm (díry na
-tyto matky jsou již vytvořené v 3D tištěných dílech). Několik čtvercových
-matek pro šrouby o průměru 5mm.
+Samozřejmě 3D tištěné díly nejsou vše, jsou potřeba krokové motory,
+šrouby, ložiska, kabely, hliníkové extruze atd. Rozměry ložisek jsou
+vyznačené v nákresech, takže podle toho lze určit správné ložisko. U
+ložisek je filozofie taková, že jich maximum chci od lokálních českých
+firem. Dále je potřeba enormní množství šroubů různých velikostí, většina
+šroubů má průměř 3mm, několik šroubů je velikosti 5mm (montáž hliníkových
+extruzí) a několik šoubů 2.5mm a 2mm na montáž enkóderů a malých dílů.
+Doporučuji použít šrouby Philips s nízkou hlavičkou (většina děr v
+3D-tištěných dílech je dimenzována tak, aby hlavička šroubu byla zarovnána
+s povrchem dílu). Naprostá většina matek jsou čtvercové velikosti 3mm,
+které se zasouvají zboku do tištěných dílů (v nákresech je téměř na všech
+dílech vidět spousta malých obdélníkových otvorů, které jsou určeny právě
+pro tyto matky).
 
 Spojnice na paži využívají hliníkové profily velikosti 20mm x 20mm (pažní
 spojnice) a 30mm x 30mm a 15mm x 15mm (loketní spojnice), jejich délkou
@@ -57,7 +76,8 @@ lze ovlivnit celkovou velikost robota, ale nedoporučuji dělat robota moc
 velkého, neboť každé prodloužení paže zvětšuje páky a točivé momenty.
 
 Celkem je potřeba 7 krokových motorů, čtyři motory Nema 23 různých
-velikostí – 112mm pro ramenní kloub, 76mm pro základnu, 54mm a 80mm pro
+velikostí – 112mm pro ramenní kloub (tento motor je asi poněkud předimenzovaný,
+ale dodává robotovi silný vzhled), 76mm pro základnu, 54mm a 80mm pro
 loketní klouby, dále motory Nemá 17, z toho jeden velký 59mm na otáčení
 zápěstního kloubu a dva menší 39mm na rotaci zápěstí a otevírání a zavírání
 kleští. Kleště jsou rozpohybovány pomocí závitové tyče, takže je dobré
@@ -65,14 +85,65 @@ použít motor se závitovou tyčí místo hřídele. Enkodéry jsou montovány
 přímo k jednotlivým kloubům, držáky z 3D tisku jsou připravené na enkodéry
 AMT 103V a jeden AMT 102V pro kleště.
 
-Toto je jen krátký úvodník k robotické paži RR1. Chtěl bych vytvořit
+
+======================================================================
+
+2. Zdrojové soubory CAD pro rev.2
+------------------------------------
+
+Rozhodl jsem se zveřejnit kompletní zdrojové soubory s CAD výkresy
+k RR1 revizi 2. Dávám zdrojové CAD soubory k dispozici zcela zdrama
+volně pro komunitu tvůrců podle přiložené licence GPL. Ačkoli jsem
+vytvářením strávil spoustu času, myslím si, že jako akademik bych měl
+poskytovat výsledky své práce veřejnosti.
+
+Současný stav zdrojových souborů je stále poněkud nepořádný a zdaleka ne
+všechno je hezky pojmenováno. Některé díly se ve zdrojácích dokonce
+vyskytují v  různých variantách. Myslím si ale, že trochu šikovný tvůrce
+se v nákresech vyzná a svého robota vytvořit dokáže. Je třeba, říci, že
+robota RR1 stále vyvíjím, v době psaní tohoto textu pracuji na revizi 3
+(opakuji, že zveřejněná verze zdrojáků je k revizi 2). Takže dokonalejší
+dokumentace, pojmenování a organizace souborů přijde v revizi 3 a
+pozdějších.
+
+Pro lepší orientaci přidávám i soubory STL ve zvláštním adresáři. Ty lze
+také rovnou použít pro tisk, pokud není potřeba žádná úprava dílu.
+
+K návrhu 3D tištěných dílů byl použit FreeCAD v duchu mé filozofie
+maximálně používat volně šiřitelný otevřený software, který dává
+garanci dlouhého svobodného trvání bez ošklivých marketingových triků.
+
+K tisku doporučuji tiskárny Prusa MK3S+ nebo Prusa MK4. Jako materiály
+doporučuji na mechanické díly (ozubená kolečka) použít Prusament PC
+Blend s uhlíkovým vláknem, na podpůrné díly stačí PETG nebo PLA. Pomocí
+těchto tiskáren a materiálů byl vytištěn můj exemplář RR1 rev. 2
+(https://surynek.net/_main/index.php?select=research#RR1rev2).
+
+U mechanických dílů je někdy vzhledem k nepřesnostem tisku a různým
+vlastnostem materiálů poladit velikosti dílů přibližně o 0.1mm, aby
+vše do sebe hladce pasovalo. Je tedy zcela v pořádku, že konkrétní díl
+typicky mechanické ozubené kolečko má přesné rozměry až v několikátém
+výtisku (čím více tiskáren máte, tím lépe :-). Pochopitelně nejvíce je
+nepřesnosti potřeba ladit u planetových převodovek.
+
+
+======================================================================
+
+4. Závěr
+--------------------------------
+
+Toto je jen krátký úvodník k robotické paži RR1. Postupně bych chtěl vytvořit
 podrobný návod na stavbu, ale nejspíš to udělám až pro další revize robota,
 protože pořád robota ještě vylepšuju a dělám změny. Tím chci říct, že
 revize 3 už se vyvíjí (můžete zkusit uhádnout, jakou bude mít barvu).
 
+Jakmile budou připravené další materiály a dokumenty, zveřejním je také.
+Uvítám jakékoli postřehy a komentáře, případně návrhy, co by bylo potřeba
+v dalších revizich robota zlepšit.
+
 
 ----------------------------------------------------------------------
 
-Konstrukci robotů zdar!
+Zatím děkuji za přízeň a konstrukci robotů zdar!
 
-Pavel Surynek, srpen 2023
+Pavel Surynek, leden 2024
