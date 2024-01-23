@@ -17,7 +17,6 @@ RR1: Real Robot One - DIY 3D-Printable Desktop Robotic Arm
 1. RR1 introduces itself
 --------------------------------
 
-
 RR1: Real Robot One is a dektop 6-axis robotic arm. The robot is based
 on 3D printed parts, uses stepper motors Nema 23 and Nema 17 and custom
 planetary gearboxes. Robot can be controlled using Arduino (I used
@@ -35,7 +34,7 @@ the black robot), was used to test and verify the possibility of a robotic
 arm using 3D printing to build. Because the materials for rev. 1
 never were very well organized, I decided to post from rev. 2 including
 CAD source files, i.e. everything is completely open source.
-?
+
 Design experience is such that the revision 1 of the RR1 robot (rev. 1 -
 black robot), which was printed entirely from PETG, was not ideal. It
 turned out that overall the robot is not rigid enough, especially it
@@ -71,7 +70,6 @@ small parts. I recommend using Philips screws with a low head (most holes in
 the surface of the part). The vast majority of nuts are 3mm square,
 which slide into the printed parts from the side (you can see a lot of small
 rectangular holes in almost all parts that are intended for these nuts).
-
 
 The links of the arm use aluminum profiles of size 20mm x 20mm (upper arm
 link) and 30mm x 30mm and 15mm x 15mm (elbow link), their length can adjust
