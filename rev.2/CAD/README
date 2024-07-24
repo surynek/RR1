@@ -1,6 +1,6 @@
 RR1: Real Robot Number One - DIY 3D-Printable Desktop Robotic Arm
 
-(C) Pavel Surynek, 2021 - 2023
+(C) Pavel Surynek, 2021 - 2024
 
 =======================================================================
 
@@ -58,8 +58,24 @@ As more files and documents are ready, I will post them as well.
 In the meantime, thanks for reading!
 
 
--------------------------------------------------- --------------------
+-----------------------------------------------------------------------
 
 Happy and successful robot construction!
 
-Pavel Surnek, December 2023
+Pavel Surynek, December 2023
+
+
+-----------------------------------------------------------------------
+Update: July 2024
+-----------------------------------------------------------------------
+
+New design of gearboxes for shoulder and elbow joints is introduced. The
+corresponding CAD files are denoted J-max-deep and J-midi-deep. The new design
+features higher gears giving the joint better rigidity.
+
+We are also developing new gearboxes for shoulder and elboew joints that feature
+thin-wall bearings instead of custom built bearing from metal balls inserted
+between grooves. The corresponding CAD files are denoted J-midi-deep-thin,
+J-midi-thin, J-max-deep-thin, and J-max-thin. We expect smoother rotation
+from the use of thin-wall bearings.
+
