@@ -1,10 +1,23 @@
-RR1: Real Robot Number One - DIY 3D-Printable Desktop Robotic Arm
+RR1: Real Robot One - DIY 3D-Printable Desktop Robotic Arm
 
-(C) Pavel Surynek, 2021 - 2023
+(C) Pavel Surynek, 2021 - 2024
 
 =======================================================================
 
-RR1:Real Robot One is a dektop 6-axis robotic arm. The robot is based
+0. Contents:
+--------------------------------
+
+1. RR1 introduces itself
+2. CAD source files for rev.2
+3. Conclusion
+
+
+======================================================================
+
+1. RR1 introduces itself
+--------------------------------
+
+RR1: Real Robot One is a dektop 6-axis robotic arm. The robot is based
 on 3D printed parts, uses stepper motors Nema 23 and Nema 17 and custom
 planetary gearboxes. Robot can be controlled using Arduino (I used
 Adruino Due), but you can use another single-board computer.
@@ -14,14 +27,13 @@ the encoder mounted directly to the joints of the robot knows at every
 moment, what configuration the robot is in (i.e. what are the angles of
 its joints).
 
-I finally managed to collect all the parts for RR1 revision 2 (rev.2 -
-the orange robot) here together in the  .stl format in one repository.
-
-I have not yet published the source files in CAD, I will send them on
-request for a specific part (sometimes parts need to be adjusted by a
-few tenths of a millimeter for a specific 3D printer). The design of 
-the RR1 robot represents lot of work for me, so I don't want to make the
-sources completely freely available (at least for now).
+In this repository, I try to post materials for building the RR1 robot. The
+published materials refer to the second copy of RR1, the so-called revision 2
+(rev. 2, the orange robot). The first copy, i.e. revision 1 (rev. 1 -
+the black robot), was used to test and verify the possibility of a robotic
+arm using 3D printing to build. Because the materials for rev. 1
+never were very well organized, I decided to post from rev. 2 including
+CAD source files, i.e. everything is completely open source.
 
 Design experience is such that the revision 1 of the RR1 robot (rev. 1 -
 black robot), which was printed entirely from PETG, was not ideal. It
@@ -45,15 +57,19 @@ to print the rods from the flexible material such as TPU 98A. There is
 also a need from this flexible material to print the inner serrated
 surface of the gripper.
 
-In addition to the printed part, many screws of different lengths and
-nuts are needed. The printed parts can be put together using metric screws
-with a diameter of 3 mm (the vast majority) and several screws with
-diameters of 4mm and 5mm. I recommend use Philips screws with a low head
-(most holes in 3D-printed parts is dimensioned so that the screw head is
-aligned with the surface part). Furthermore, square nuts are needed for
-screws with a diameter of 3 mm (holes on these mothers are already created
-in 3D printed parts). Several square nuts for screws with a diameter
-of 5 mm.
+Of course, 3D printed parts are not everything, stepper motors are needed,
+screws, bearings, cables, aluminum extrusions, etc. Bearing dimensions are
+marked in the drawings so that the correct bearing can be determined
+accordingly. The philosophy in the choice of bearings is that I want as
+many of them as possible from local Czech companies. In addition, an enormous
+number of screws of various sizes are needed, most of the screws have a
+diameter of 3 mm, several screws are 5 mm in size (installation of aluminum
+extrusions) and several 2.5mm and 2mm screws for mounting encoders and
+small parts. I recommend using Philips screws with a low head (most holes in
+3D-printed parts are dimensioned so that the screw head is aligned with
+the surface of the part). The vast majority of nuts are 3mm square,
+which slide into the printed parts from the side (you can see a lot of small
+rectangular holes in almost all parts that are intended for these nuts).
 
 The links of the arm use aluminum profiles of size 20mm x 20mm (upper arm
 link) and 30mm x 30mm and 15mm x 15mm (elbow link), their length can adjust
@@ -61,14 +77,63 @@ overall size of the robot, but I do not recommend making the robot too
 big, because every extension of the arm increases levers and torques.
 
 A total of 7 stepper motors are needed, four Nema 23 motors of different
-sizes – 112mm for the shoulder joint, 76mm for the base, 54mm and 80mm for
+sizes – 112mm for the shoulder joint (this motor is probably a bit oversized,
+but gives the robot a strong look), 76mm for the base, 54mm and 80mm for
 the elbow joints, further motors It does not have 17, of which one is
 a large 59mm for rotating the wrist joint and two smaller 39mm for wrist
 rotation and opening and closing of the gripper. The gripper are moved
 using a threaded rod, so it's good to use a motor with a threaded rod
-instead of a motor with standard shaft. The encoders are mounted directly
-to each single joint, 3D printed holders are ready for encoders AMT 103V
-and one AMT 102V for gripper.
+preinstalled instead of a motor with standard shaft. The encoders are
+mounted directly to each single joint, 3D printed holders are ready for
+encoders AMT 103V and one AMT 102V for gripper.
+
+
+======================================================================
+
+2. CAD source files for rev.2
+--------------------------------
+
+I decided to post the complete source files with CAD drawings for
+RR1 revision 2. I make the source CAD files available completely free of
+charge freely available to the maker community under the attached GPL
+license. Although I spent a lot of time creating the robot, I think as
+an academic I should to provide the results of my work to the public.
+
+The current state of the source files is somewhat messy and far from
+everything nicely named. Some parts even occur in several variants in the
+source files. However I think a bit of a clever maker can familiarize
+with the drawings and can build his/her own robot. It must be said that
+I am still developing the RR1 robot, at the time of writing I am working
+on the revision 3 (I repeat that the published version of the sources is
+for the revision 2). So more perfect documentation, naming
+and organization of files will come in revision 3 a later ones.
+
+For better orientation, I also add STL files in a separate directory. You
+can also be used directly for printing if no part modification is required.
+
+FreeCAD has been used to design the 3D printed parts in the spirit of
+my philosophy of maximum use of open source software that gives a guarantee
+of long free duration without ugly marketing tricks.
+
+For printing, I recommend Prusa MK3S+ or Prusa MK4 printers. As of materials,
+I recommend using Prusament PC Blend with carbon fiber for mechanical
+parts (gears), PETG or PLA is good enough for the supporting parts. I
+printed my copy RR1 rev. 2 using these printers and materials (see more details
+on https://surynek.net/_main/index.php?select=research#RR1rev2).
+
+As of mechanical parts, it is sometimes due to printing inaccuracies and
+various properties of the materials to adjust the size of the parts by
+approximately 0.1mm in order make everything fit together smoothly. So it
+is perfectly fine that a particular part, typically a mechanical gear,
+has accurate dimensions only after several printouts (the more printers
+you have, the better :-). Of course, most inaccuracies need to be tuned
+for planetary gearboxes.
+
+
+======================================================================
+
+3. Conclusion
+--------------------------------
 
 This is just a short introduction to the RR1 robotic arm. I would like to
 create detailed construction instructions, but I will probably leave it
@@ -76,8 +141,13 @@ until the next revisions of the robot, because I am still improving the
 robot and making changes. I mean that revision 3 is already in development
 (you can try to guess what color it will be).
 
--------------------------------------------------- --------------------
+As more files and documents are ready, I will post them as well. I welcome
+any observations and comments, or suggestions as what could improve the robot
+in the next revisions etc.
+
+
+----------------------------------------------------------------------
 
 Happy and successful robot construction!
 
-Pavel Surnek, August 2023
+Pavel Surnek, January 2024
