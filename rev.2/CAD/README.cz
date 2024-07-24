@@ -63,6 +63,16 @@ Konstrukci robotů zdar!
 Pavel Surynek, prosinec 2023
 
 
-----------------------------------------------------------------------
-Update:
-----------------------------------------------------------------------
+-------------------------------------------------------------------------
+Aktualizace: červenec 2024
+-------------------------------------------------------------------------
+
+Je představen nový design převodovek pro ramenní a loketní klouby. The
+odpovídající CAD soubory jsou označeny J-max-deep a J-midi-deep. Nový design
+obsahuje vyšší převody poskytující kloubu lepší tuhost.
+
+Vyvíjíme také nové převodovky pro ramenní a loketní klouby tenkostěnná ložiska
+místo 3D-tištěného ložiska z vložených kovových kuliček mezi drážkami.
+Odpovídající soubory CAD jsou označeny jako J-midi-deep-thin, J-midi-thin,
+J-max-deep-thin a J-max-thin. Očekáváme hladší rotaci z použití tenkostěnných
+ložisek.
